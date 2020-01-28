@@ -13,7 +13,7 @@ routes.get('/',(req,res) => {
 //operações de cadastro
 
 routes.post('/devs', (req,res) => {
-    return res.json({ok:true});
-})
+    return res.json(req.body);
+});
 
 module.exports = routes;
