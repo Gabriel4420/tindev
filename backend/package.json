@@ -1,0 +1,9 @@
+{
+  "name": "tindev",
+  "version": "1.0.0",
+  "description": "um tinder para desenvolvedores",
+  "main": "index.js",
+  "repository": "https://github.com/Gabriel4420/tindev",
+  "author": "rocketseat",
+  "license": "MIT"
+}
