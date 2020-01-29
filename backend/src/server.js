@@ -6,7 +6,10 @@ const routes = require('./routes');
 // nenhum endereço.
 const server = express();
 
-mongoose.connect('mongodb+srv://oministack:oministack@cluster0-lpzif.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://tindev:AgCTDTp3VoDySgGP@cluster0-lpzif.mongodb.net/test?retryWrites=true&w=majority', {
+    useUnifiedTopology: true,
+    useNewUrlParser:true
+});
 
 server.use(express.json());
 // serve para quando queremos colocar algum tipo de configuração 
@@ -14,3 +17,6 @@ server.use(express.json());
 server.use(routes);
 //serve para ouvir uma porta no servidor por assim dizer
 server.listen(3333);
+
+//M - Model , V - View , C - Controller
+
