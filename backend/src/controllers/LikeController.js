@@ -21,7 +21,7 @@ module.exports = {
             return res.status(400).json({error:'Dev not exists'});
         }
         if(targetDev.likes.includes(loggedDev._id)){
-            return console.log('DEU MATCH');
+             console.log('DEU MATCH');
         }
         /* Salvando o like do usuario logado, usando a forma que o mongo utiliza para salvar
         no DB */

@@ -28,6 +28,6 @@ const Devschema = new Schema({
     timestamps:true
 });
 
-module.exports = model('dev',Devschema);
+module.exports = model('Dev', Devschema);
 
 //createdAt, updateAt

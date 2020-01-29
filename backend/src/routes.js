@@ -18,9 +18,9 @@ const routes = express.Router();
 /* routes.post('/devs', (req,res) => {
     return res.json(req.body);
 }); */
-
+routes.get('/devs',devController.index);
 //operações de cadastro com controller
 routes.post('/devs',devController.store);
 routes.post('/devs/:devId/likes', likeController.store);
-routes.post('/devs/:devId/dislikes', deslikeController.store);
+routes.post('/devs/:devId/deslikes', deslikeController.store);
 module.exports = routes;
