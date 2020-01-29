@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import logo from '../assets/tindev-logo (1).svg';
-import './login.css';
+import './css/login.css';
 import api from '../services/api';
 
 export default function Login({ history }){
@@ -12,9 +12,9 @@ export default function Login({ history }){
             username
         });
 
+        const {_id} = response.data;
         console.log(response);
-
-        history.push('/main');
+        history.push(`/dev/${_id}`);
     }
 
     return (
