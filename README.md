@@ -1,3 +1,3 @@
 # Aplicativo Tindev
 
-    um app para dar match com programadores.
+um app para dar match com programadores.
