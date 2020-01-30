@@ -96,3 +96,52 @@ img#logo{
     font-weight: bolder;
     margin-top: 300px;
 }
+
+.match-container{
+    position: absolute;
+    top:50px;
+    left:0;
+    right:0;
+    bottom:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0,0,0,0.8);
+    height: 677px;
+    width: 100%;
+
+}
+
+.match-container .avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin:30px 0;
+}
+
+.match-container strong{
+    font-size: 32px;
+    color: #fff;
+}
+
+
+.match-container P{
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 400px;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.match-container button{
+    border: 0;
+    background:none;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}

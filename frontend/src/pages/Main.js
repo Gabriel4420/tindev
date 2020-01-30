@@ -1,15 +1,17 @@
 import React, {useEffect,useState} from 'react';
+import io from 'socket.io-client';
 import logo from '../assets/tindev-logo (1).svg';
 import like from '../assets/like.svg';
 import dislike from '../assets/finger.svg';
 import api from '../services/api';
 import './css/main.css';
 import {Link} from 'react-router-dom';
+import itsamatch from '../assets/its a match2.png';
 export default function Main({ match }){
-
+//criação de estados states
     const [users,setUsers] = useState([]);
-
-
+    const [matchDev,setMatchDev] = useState(null);
+//Realiza uma chamada a api para requisitar o id do dev
     useEffect(() => {
         async function loadUsers(){
             const response = await api.get('/devs',{
@@ -19,8 +21,26 @@ export default function Main({ match }){
         }
 
         loadUsers();
-    }, [match.params.id])
+    }, [match.params.id]);
 
+//Serve para se conectar ao webSocket 
+
+    useEffect(()=>{
+        const socket = io('http://localhost:3333',{
+            query:{user:match.params.id}
+        });
+
+        /* setTimeout(() =>{
+            socket.emit('hello')
+        },3000); */
+        socket.on('match', dev => {
+            // console.log(dev)
+            setMatchDev(dev);
+        })
+    },[match.params.id]);
+
+
+// função para dar like no usuario
     async function handleLike(id){
         await api.post(`/devs/${id}/likes`,null,{
             headers:{user:match.params.id},
@@ -28,7 +48,7 @@ export default function Main({ match }){
 
         setUsers(users.filter(user => user._id !== id));
     }
-
+// função para dar dislike no usuario
     async function handleDislike(id){
         await api.post(`/devs/${id}/deslikes`,null,{
             headers:{user:match.params.id},
@@ -73,7 +93,16 @@ export default function Main({ match }){
                     <div className="empty">Acabou :( </div>
                 ) }
                
-            
+            { matchDev && (
+                <div className="match-container">
+                    <img className="match-image" src={itsamatch} alt="imagem match"></img>
+                    
+                    <img className="avatar" src={matchDev.avatar} alt="match"></img>
+                    <strong>{matchDev.name}</strong>
+                    <p>{matchDev.bio}</p>
+                    <button type="button" onClick={() => setMatchDev(null)}>sair</button>
+                </div>
+            ) }
         </div>
     )
 }
