@@ -4,8 +4,7 @@ const { Schema, model } = require('mongoose');
 
 const Devschema = new Schema({
     name:{
-        type:String,
-        required:true
+        type:String
     },
     user:{
         type:String,
