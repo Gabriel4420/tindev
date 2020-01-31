@@ -2,4 +2,4 @@
 
 um app para dar match com programadores.
 
-![](estrutura-tindev.png)
+![](estrutura_tindev.png)
