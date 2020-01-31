@@ -2,4 +2,4 @@
 
 um app para dar match com programadores.
 
-<img src="https://previews.dropbox.com/p/thumb/AAt7H6FwmSthAZ8OH1aDHrR8kvOqxlzelwbpci9kisnDJrf3GJens-CqKKGnIWkKQJTDRsQJ5kNyNaJ80vDIbway3uAUCM7mBin5p1R3fnYijBwp6IawiT1Cvl99g9KAhw3GwGvLB6L608LT9TdUxHre0G080Rik8WAHse4A6jjLVCZtOWEOYnvYvadWhprxu2Ezg-ps0Pq4GLpAiesKUOA9y9qVQAfzSsrvfXqLeX1Bongk4Gq5DBDfeOg1huO7CZvffuQXpf7hgQWzPG5OhTu7b--0fwgGVOgbPfGvHmqVjVNP4ws1EeWwIjE_Nm2-PhYmtO9mVc8dotBXcJsN-MYF/p.png?fv_content=true&size_mode=5">
+<img src="https://www.dropbox.com/h?estrutura_tindev.png">
