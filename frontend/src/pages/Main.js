@@ -1,3 +1,4 @@
+//Importações de bibliotecas e dependencias do projeto
 import React, {useEffect,useState} from 'react';
 import io from 'socket.io-client';
 import logo from '../assets/tindev-logo (1).svg';
@@ -7,6 +8,9 @@ import api from '../services/api';
 import './css/main.css';
 import {Link} from 'react-router-dom';
 import itsamatch from '../assets/its a match2.png';
+
+/* Exportação padrão da função Main, que passa o objeto match, como 
+parâmetro */
 export default function Main({ match }){
 //criação de estados states
     const [users,setUsers] = useState([]);
