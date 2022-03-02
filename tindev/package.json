@@ -10,8 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "is-svg": "^3.0.0",
-    "node-fetch": "^1.0.1",
+    "node-fetch": "^2.6.7",
     "react": "16.9.0",
     "react-native": "0.62.3"
   },
