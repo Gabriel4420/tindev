@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "css-select": "2.1.0",
-    "minimist": "^1.2.6",
+    "minimist": "^0.0.8",
     "mkdirp": "0.5.1",
     "node-fetch": "^3.2.5",
     "nth-check": "^1.0.2",
