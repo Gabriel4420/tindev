@@ -9,7 +9,7 @@
     "axios": "^0.27.2",
     "immer": "9.0.14",
     "minimist": "^1.2.6",
-    "nth-check": "^1.0.2",
+    "nth-check": "^2.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
