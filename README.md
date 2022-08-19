@@ -1,5 +1,5 @@
 <h1 align="center">
-  &#x1F4F1; Calculadora IMC &#x1F4F1;
+   Tindev 
 </h1>
 
 <p align="center">
