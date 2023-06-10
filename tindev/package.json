@@ -10,13 +10,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "css-select": "2.1.0",
-    "minimist": "^1.2.6",
-    "mkdirp": "0.5.1",
+    "css-select": "^5.1.0",
+    "minimist": "^1.2.8",
+    "mkdirp": "^0.5.1",
     "node-fetch": "^3.2.5",
     "nth-check": "^2.0.1",
     "react": "18.1.0",
-    "react-native": "0.68.2"
+    "react-native": "^0.68.2"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
