@@ -10,7 +10,7 @@
     "immer": "9.0.14",
     "json5": "^1.0.2",
     "minimist": "^1.2.6",
-    "nth-check": "^2.0.1",
+    "nth-check": "^2.1.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
